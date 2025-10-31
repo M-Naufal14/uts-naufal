@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>NF_Store</title>
+</head>
+<body class="">
+    <!-- untuk alert -->
+    <div id="alert-container" class="fixed top-5 right-5 z-50 space-y-2"></div>
+    <!-- end alert -->
+
+    <!-- promosi -->
+    <div class="border-b border-gray-200 bg-gray-100 px-4 py-2 text-gray-900">
+        <p class="text-center font-medium">
+            SELAMAT DATANG DI NF_Store
+            <a href="#" class="inline-block underline"> Selamat Berbelanja! </a>
+        </p>
+    </div>
+    <!-- end promosi -->
+
+    <!-- navbar -->
+    <header class="bg-white">
+    <div class="mx-auto flex h-16 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+        <a class="block text-blue-600" href="index.html">
+        <span class="sr-only">Home</span>
+        <img src="logo.png" class="h-5" viewBox="0 0 28 24" fill="none" alt="">
+        </a>
+
+        <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Global" class="hidden md:block">
+            <ul class="flex items-center gap-6 text-sm">
+            <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="index.html"> Home </a>
+            </li>
+            </ul>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <!-- <div class="sm:flex sm:gap-4">
+                <a class="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700" href="#">
+                    Checkout
+                </a>
+
+                <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-red-600 transition hover:text-red-300/75 sm:block" href="login.html">
+                    LogOut
+                </a>
+            </div> -->
+
+            <button class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">
+            <span class="sr-only">Toggle menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            </button>
+        </div>
+        </div>
+    </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- keranjang -->
+    <section class="">
+        <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+            <div class="mx-auto max-w-3xl">
+            <header class="text-center">
+                <h1 class="text-xl font-bold text-gray-900 sm:text-3xl">Keranjang</h1>
+            </header>
+
+            <div id="cart-items" class="mt-8"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end keranjang -->
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
+
+
+
+<!-- <div class="mt-8 flex justify-end border-t border-gray-100 pt-8">
+<div class="w-screen max-w-lg space-y-4">
+    <dl class="space-y-0.5 text-sm text-gray-700">
+    <div class="flex justify-between">
+        <dt>Subtotal</dt>
+        <dd>£250</dd>
+    </div>
+
+    <div class="flex justify-between">
+        <dt>VAT</dt>
+        <dd>£25</dd>
+    </div>
+
+    <div class="flex justify-between">
+        <dt>Discount</dt>
+        <dd>-£20</dd>
+    </div>
+
+    <div class="flex justify-between !text-base font-medium">
+        <dt>Total</dt>
+        <dd>£200</dd>
+    </div>
+    </dl>
+
+    <div class="flex justify-end">
+    <span class="inline-flex items-center justify-center rounded-full bg-indigo-100 px-2.5 py-0.5 text-indigo-700">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-4">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z"></path>
+        </svg>
+
+        <p class="text-xs whitespace-nowrap">2 Discounts Applied</p>
+    </span>
+    </div>
+
+    <div class="flex justify-end">
+    <a href="#" class="block rounded-sm bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600">
+        Checkout
+    </a>
+    </div>
+</div>
+</div> -->
